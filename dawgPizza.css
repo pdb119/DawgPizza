@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Cantora+One);
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	background-color:#999;
+	background-image:url(img/pizza1.jpg)
+}
+.contentPane {
+	width:80%;
+	margin: 15px auto;
+	background-color:#FFF;
+	padding:0px;
+}
+
+h1 {
+	font-size:75px;
+	font-weight:bold;
+	font-family: 'Cantora One', sans-serif;
+	color:#7f5da4;
+}
+
+/*header h1 {
+	float:right;
+	margin-right: 10px;
+}*/
+header img {
+	float:left;
+	margin-right: 5px;
+}
+
+header {
+	background-color:#333;
+}
+nav {
+	clear:both;
+	padding:5px;
+}
+nav a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+nav a:hover {
+	color:#7f5da4;
+}
+footer {
+	clear: both;
+	background-color:#333;
+}
