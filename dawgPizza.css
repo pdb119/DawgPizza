@@ -13,10 +13,12 @@ body {
 }
 
 h1 {
-	font-size:75px;
+	font-size:50px;
 	font-weight:bold;
 	font-family: 'Cantora One', sans-serif;
 	color:#7f5da4;
+	margin:0px;
+	padding:0px;
 }
 
 /*header h1 {
@@ -32,7 +34,7 @@ header {
 	background-color:#333;
 }
 nav {
-	clear:both;
+	/*clear:both;*/
 	padding:5px;
 }
 nav a {
@@ -42,6 +44,10 @@ nav a {
 
 nav a:hover {
 	color:#7f5da4;
+}
+article {
+	
+	/*clear:both;*/
 }
 footer {
 	clear: both;
