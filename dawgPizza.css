@@ -2,17 +2,35 @@
 @import url(reset.css);
 body {
 	font-family:Verdana, Geneva, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	background-color:#999;
 	background-image:url(img/binding_light.png)
 }
+/*:focus {
+	outline: thin solid #F00;
+}*/
 
-.contentPane {
+#contentPane {
 	width:80%;
 	margin: 15px auto;
 	background-color:#FFF;
-	padding:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
 	box-shadow: 5px 5px 5px #666;
+	min-width: 180px;
+}
+.footerSpace {
+padding-bottom: 50px;
+}
+
+.row {
+	clear: both;
+}
+	
+.col {
+	float: left;
+	width: 50%;
 }
 
 h1 {
@@ -48,6 +66,9 @@ h4 {
 header img {
 	float:left;
 	margin-right: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
+	max-width: 85%;
 }
 
 header {
@@ -58,6 +79,8 @@ header {
 nav {
 	/*clear:both;*/
 	margin-top:6px;
+	clear: both;
+	margin-left: 20px;
 }
 nav a {
 	color:#FFF;
@@ -66,6 +89,10 @@ nav a {
 	text-decoration:none;
 	padding-right:10px;
 }
+nav li {
+	display: inline-block;
+}
+
 
 nav a:hover {
 	color:#7f5da4;
@@ -75,7 +102,12 @@ article {
 }
 
 article img {
-	float: right;
+	float:right;
+	padding:6px;
+	width: 350;
+}
+article iframe {
+	clear: right;
 	padding:6px;
 }
 
@@ -98,9 +130,19 @@ footer {
 	background-color:#333;
 	color: white;
 }
+.scrolledFooter {
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	left:0px;
+}
 
 footer p {
 	font-size:50%;
+}
+
+.line-divide {
+	border-top: thin solid #999;
 }
 
 ul {
@@ -121,4 +163,36 @@ dt {
 
 dd {
 	margin-left:15px;
+}
+
+@media (max-width: 767px){
+	.col {
+		float:none;
+		width:100%;
+	}
+	
+	.row {
+		min-width: 300px;
+	}
+	#contentPane {
+		width: 100%;
+	}
+	article img {
+		max-width: 50%;
+	}
+}
+@media (max-width: 480px){
+	body {
+		font-size: 11px;
+	}
+	article img {
+		display: none;
+	}
+	header img {
+		float:left;
+		margin-right: 2px;
+		margin-left: 0px;
+		margin-top: 0px;
+		max-width: 90%;
+	}	
 }

@@ -3,34 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="dawgPizza.css">
+<script src="dawgPizza.js"></script>
+<script src="menu.js"></script>
 		<title>Dawg Pizza - Home</title>
 	</head>
 
-	<body>
-		<div class="contentPane">
+	<body onLoad="checkFooter();">
+		<div id="contentPane" class="footerSpace">
             <header>
-                <a href="index.html"><img src="img/logo.png" alt="dawg pizza logo" width="120" height="75"></a>
-                <nav>
-                    <h1>Dawg Pizza</h1>
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Our Menu</a>
-                    <a href="about.html">About Us</a>
+                <a href="index.html"><img src="img/logo.png" alt="dawg pizza logo" height="75"></a>
+                <nav>                                      
+                	<a href="index.html">Home</a>
+                	<a href="menu.html">Our Menu</a>
+                	<a href="about.html">About Us</a>
                 </nav>
           </header>
-            <article>
-                <img src="img/pizza1_small.jpg" alt="pizzas">
-                <h4>Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</h4>
+            <article>  
+				<h4>Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</h4>              
+				<img src="img/pizza1_small.jpg" alt="pizzas">				
                 <h3>Hours</h3>
                 <p>Come in or call between 10:00 AM and 11:00PM, Monday through Saturday.</p>
                 <h3>How to reach us and our pizzas</h3>
                 <p>Call 206-555-1212 or email <a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com</a></p>
                 <p>Come see us at: <a href="http://binged.it/16yqtZX">4306 University Way NE Seattle, WA 98105</a></p>
                 <p><a href="https://twitter.com/DawgPizzaSea">Twitter Page</a></p>
+               <!-- This had to go: <iframe width="420" height="315" src="http://www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>-->
             </article>
-            <footer>
+            <footer id="footerBar" class="scrolledFooter">
                 <h6>Call us for delivery: 206-555-1212</h6>
                 <p>&copy; 2013 Dawg Pizza</p>
             </footer>
 		</div>
+		<div id="measure"></div>
 	</body>
 </html>
